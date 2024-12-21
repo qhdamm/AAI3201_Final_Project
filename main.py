@@ -24,18 +24,16 @@ def initialize_pipeline(base_model_path: str, lora_model_path: str, refiner_mode
         torch_dtype=torch.float16,
     ).to(device)
 
-    # Load LoRA weights
+    # Load LoRA
     pipeline.load_lora_weights(lora_model_path)
 
-    # Load IP-Adapter weights
+    # Load IP-Adapter
     pipeline.load_ip_adapter(
         ip_adapter_path,
         subfolder="sdxl_models",
         weight_name=["ip-adapter-plus_sdxl_vit-h.safetensors", "ip-adapter-plus-face_sdxl_vit-h.safetensors"],
     )
     pipeline.set_ip_adapter_scale([0.7, 0.3])
-
-    # Update scheduler
     pipeline.scheduler = DDIMScheduler.from_config(pipeline.scheduler.config)
 
     # Load refiner model
