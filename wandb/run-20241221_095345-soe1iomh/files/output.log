@@ -18,4 +18,16 @@ Loading pipeline components...: 100%|█████████████| 7/
 Steps:   1%|▏          | 6/500 [01:29<1:27:14, 10.60s/it, loss=0.126, lr=0.0001][34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
 [34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
 [34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
-Steps:  22%|██▏       | 110/500 [04:56<11:37,  1.79s/it, loss=0.0534, lr=0.0001]
+Steps:  40%|████▍      | 202/500 [08:02<08:52,  1.79s/it, loss=0.075, lr=0.0001]{'image_encoder', 'feature_extractor'} was not found in config. Values will be initialized to default values.
+                                                                                Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                                {'sigma_min', 'use_beta_sigmas', 'final_sigmas_type', 'use_exponential_sigmas', 'sigma_max', 'rescale_betas_zero_snr', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|█████████████| 7/7 [00:00<00:00, 66.05it/s]
+12/21/2024 10:01:50 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: tiniping character in the snow.
+{'use_beta_sigmas', 'lambda_min_clipped', 'flow_shift', 'use_lu_lambdas', 'final_sigmas_type', 'lower_order_final', 'thresholding', 'use_exponential_sigmas', 'dynamic_thresholding_ratio', 'algorithm_type', 'variance_type', 'solver_type', 'use_flow_sigmas', 'euler_at_final', 'solver_order', 'rescale_betas_zero_snr'} was not found in config. Values will be initialized to default values.
+Steps:  41%|███▏    | 203/500 [09:19<2:00:42, 24.38s/it, loss=0.0228, lr=0.0001][34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 202 that is less than the current step 203. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 202 that is less than the current step 203. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 202 that is less than the current step 203. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Steps:  42%|████▌      | 210/500 [09:35<17:32,  3.63s/it, loss=0.166, lr=0.0001]

@@ -9,3 +9,6 @@
 {"time":"2024-12-21T09:55:06.115156212Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
 {"time":"2024-12-21T09:55:06.925393977Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
 {"time":"2024-12-21T09:55:07.716302066Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
+{"time":"2024-12-21T10:03:02.935756307Z","level":"WARN","msg":"handler: ignoring partial history record","step":202,"current":203}
+{"time":"2024-12-21T10:03:03.72455535Z","level":"WARN","msg":"handler: ignoring partial history record","step":202,"current":203}
+{"time":"2024-12-21T10:03:04.506364877Z","level":"WARN","msg":"handler: ignoring partial history record","step":202,"current":203}
