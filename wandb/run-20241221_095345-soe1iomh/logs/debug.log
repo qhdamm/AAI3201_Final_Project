@@ -1,0 +1,23 @@
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_setup.py:_flush():68] Configure stats pid to 17346
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_setup.py:_flush():68] Loading settings from /root/.config/wandb/settings
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_setup.py:_flush():68] Loading settings from /root/tini/wandb/settings
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:_log_setup():528] Logging user logs to /root/tini/wandb/run-20241221_095345-soe1iomh/logs/debug.log
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:_log_setup():529] Logging internal logs to /root/tini/wandb/run-20241221_095345-soe1iomh/logs/debug-internal.log
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:init():644] calling init triggers
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:init():680] starting backend
+2024-12-21 09:53:45,059 INFO    MainThread:17346 [wandb_init.py:init():684] sending inform_init request
+2024-12-21 09:53:45,064 INFO    MainThread:17346 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-21 09:53:45,065 INFO    MainThread:17346 [wandb_init.py:init():697] backend started and connected
+2024-12-21 09:53:45,067 INFO    MainThread:17346 [wandb_init.py:init():790] updated telemetry
+2024-12-21 09:53:45,068 INFO    MainThread:17346 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2024-12-21 09:53:45,476 INFO    MainThread:17346 [wandb_init.py:init():874] starting run threads in backend
+2024-12-21 09:53:45,641 INFO    MainThread:17346 [wandb_run.py:_console_start():2374] atexit reg
+2024-12-21 09:53:45,641 INFO    MainThread:17346 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2024-12-21 09:53:45,641 INFO    MainThread:17346 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2024-12-21 09:53:45,641 INFO    MainThread:17346 [wandb_run.py:_redirect():2314] Redirects installed.
+2024-12-21 09:53:45,643 INFO    MainThread:17346 [wandb_init.py:init():916] run started, returning control to user process
+2024-12-21 09:53:45,644 INFO    MainThread:17346 [wandb_run.py:_config_callback():1279] config_cb None None {'pretrained_model_name_or_path': 'stabilityai/stable-diffusion-xl-base-1.0', 'pretrained_vae_model_name_or_path': 'madebyollin/sdxl-vae-fp16-fix', 'revision': None, 'variant': None, 'dataset_name': None, 'dataset_config_name': None, 'instance_data_dir': 'tini', 'cache_dir': None, 'image_column': 'image', 'caption_column': None, 'repeats': 1, 'class_data_dir': None, 'instance_prompt': 'tiniping character', 'class_prompt': None, 'validation_prompt': 'tiniping character in the snow', 'num_validation_images': 4, 'validation_epochs': 100, 'do_edm_style_training': False, 'with_prior_preservation': False, 'prior_loss_weight': 1.0, 'num_class_images': 100, 'output_dir': 'lora-trained-xl', 'output_kohya_format': False, 'seed': 0, 'resolution': 1024, 'center_crop': False, 'random_flip': False, 'train_text_encoder': False, 'train_batch_size': 1, 'sample_batch_size': 4, 'num_train_epochs': 250, 'max_train_steps': 500, 'checkpointing_steps': 500, 'checkpoints_total_limit': None, 'resume_from_checkpoint': None, 'gradient_accumulation_steps': 4, 'gradient_checkpointing': False, 'learning_rate': 0.0001, 'text_encoder_lr': 5e-06, 'scale_lr': False, 'lr_scheduler': 'constant', 'snr_gamma': None, 'lr_warmup_steps': 0, 'lr_num_cycles': 1, 'lr_power': 1.0, 'dataloader_num_workers': 0, 'optimizer': 'AdamW', 'use_8bit_adam': False, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'prodigy_beta3': None, 'prodigy_decouple': True, 'adam_weight_decay': 0.0001, 'adam_weight_decay_text_encoder': 0.001, 'adam_epsilon': 1e-08, 'prodigy_use_bias_correction': True, 'prodigy_safeguard_warmup': True, 'max_grad_norm': 1.0, 'push_to_hub': True, 'hub_token': None, 'hub_model_id': None, 'logging_dir': 'logs', 'allow_tf32': False, 'report_to': 'wandb', 'mixed_precision': 'fp16', 'prior_generation_precision': None, 'local_rank': 0, 'enable_xformers_memory_efficient_attention': False, 'rank': 4, 'use_dora': False}

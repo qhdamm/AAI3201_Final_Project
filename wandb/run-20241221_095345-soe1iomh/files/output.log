@@ -1,0 +1,21 @@
+12/21/2024 09:53:45 - INFO - __main__ - ***** Running training *****
+12/21/2024 09:53:45 - INFO - __main__ -   Num examples = 10
+12/21/2024 09:53:45 - INFO - __main__ -   Num batches each epoch = 5
+12/21/2024 09:53:45 - INFO - __main__ -   Num Epochs = 250
+12/21/2024 09:53:45 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/21/2024 09:53:45 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/21/2024 09:53:45 - INFO - __main__ -   Gradient Accumulation steps = 4
+12/21/2024 09:53:45 - INFO - __main__ -   Total optimization steps = 500
+Steps:   0%|            | 2/500 [00:04<16:27,  1.98s/it, loss=0.0956, lr=0.0001]{'image_encoder', 'feature_extractor'} was not found in config. Values will be initialized to default values.
+                                                                                Loaded tokenizer as CLIPTokenizer from `tokenizer` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loaded tokenizer_2 as CLIPTokenizer from `tokenizer_2` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+                                                                                {'sigma_min', 'use_beta_sigmas', 'final_sigmas_type', 'use_exponential_sigmas', 'sigma_max', 'rescale_betas_zero_snr', 'timestep_type'} was not found in config. Values will be initialized to default values.
+Loaded scheduler as EulerDiscreteScheduler from `scheduler` subfolder of stabilityai/stable-diffusion-xl-base-1.0.
+Loading pipeline components...: 100%|█████████████| 7/7 [00:00<00:00, 63.76it/s]
+12/21/2024 09:53:51 - INFO - __main__ - Running validation...
+ Generating 4 images with prompt: tiniping character in the snow.
+{'use_beta_sigmas', 'lambda_min_clipped', 'flow_shift', 'use_lu_lambdas', 'final_sigmas_type', 'lower_order_final', 'thresholding', 'use_exponential_sigmas', 'dynamic_thresholding_ratio', 'algorithm_type', 'variance_type', 'solver_type', 'use_flow_sigmas', 'euler_at_final', 'solver_order', 'rescale_betas_zero_snr'} was not found in config. Values will be initialized to default values.
+Steps:   1%|▏          | 6/500 [01:29<1:27:14, 10.60s/it, loss=0.126, lr=0.0001][34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 3. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Steps:  22%|██▏       | 110/500 [04:56<11:37,  1.79s/it, loss=0.0534, lr=0.0001]

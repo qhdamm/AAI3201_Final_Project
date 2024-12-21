@@ -1,0 +1,11 @@
+{"time":"2024-12-21T09:53:45.068305074Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-21T09:53:45.068331454Z","level":"INFO","msg":"created symlink","path":"/root/tini/wandb/run-20241221_095345-soe1iomh/logs/debug-core.log"}
+{"time":"2024-12-21T09:53:45.179839267Z","level":"INFO","msg":"created new stream","id":"soe1iomh"}
+{"time":"2024-12-21T09:53:45.179916677Z","level":"INFO","msg":"stream: started","id":"soe1iomh"}
+{"time":"2024-12-21T09:53:45.180004056Z","level":"INFO","msg":"writer: Do: started","stream_id":"soe1iomh"}
+{"time":"2024-12-21T09:53:45.180050286Z","level":"INFO","msg":"handler: started","stream_id":"soe1iomh"}
+{"time":"2024-12-21T09:53:45.180134535Z","level":"INFO","msg":"sender: started","stream_id":"soe1iomh"}
+{"time":"2024-12-21T09:53:45.482867967Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T09:55:06.115156212Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
+{"time":"2024-12-21T09:55:06.925393977Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
+{"time":"2024-12-21T09:55:07.716302066Z","level":"WARN","msg":"handler: ignoring partial history record","step":2,"current":3}
