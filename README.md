@@ -24,8 +24,11 @@
 
 ## Results
 
+- Successfully SDXL has been trained to understand what Tiniping is.
+  <p align="center"><img src="assets/db_result.png" alt="Pipeline" width="80%" /></p>
 - Successfully transformed both human and animal photos into Tiniping-style images.
-- Demonstrated the adaptability and creative potential of the approach.
+<p align="center"><img src="assets/result.png" alt="Pipeline" width="80%" /></p>
+
 
 ## Technical Details
 
