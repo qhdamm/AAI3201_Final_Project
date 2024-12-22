@@ -4,7 +4,7 @@ from transformers import CLIPVisionModelWithProjection
 from diffusers.utils import load_image
 from torchvision import transforms
 
-def initialize_pipeline(ip_adapter_path: str, lora_model_path: str, refiner_model_path: str, device: str = "cuda"):
+def initialize_pipeline(ip_adapter_path: str, lora_model_path: str, refiner_model_path: str):
     """
     Initializes the pipeline, image encoder, and refiner model.
 
@@ -12,11 +12,11 @@ def initialize_pipeline(ip_adapter_path: str, lora_model_path: str, refiner_mode
         ip_adapter_path (str): Path to the IP-Adapter model.
         lora_model_path (str): Path to the LoRA-trained model. (Dreambooth fine-tuned model)
         refiner_model_path (str): Path to the refiner model.
-        device (str): Device to load the models (default: "cuda").
 
     Returns:
         tuple: pipeline and refiner objects.
     """
+    device="cuda"
     image_encoder = CLIPVisionModelWithProjection.from_pretrained(
         ip_adapter_path,
         subfolder="models/image_encoder",
@@ -46,7 +46,7 @@ def initialize_pipeline(ip_adapter_path: str, lora_model_path: str, refiner_mode
     return pipeline, refiner
 
 
-def generate_image(pipeline, refiner, prompt: str, negative_prompt: str, img_name: str, style_folder: str, device: str = "cuda"):
+def generate_image(pipeline, refiner, prompt: str, negative_prompt: str, img_name: str, style_folder: str):
     """
     Generates an image using the initialized pipeline and refiner.
     -> Save the generated image.
@@ -58,8 +58,8 @@ def generate_image(pipeline, refiner, prompt: str, negative_prompt: str, img_nam
         negative_prompt (str): Negative text prompt to filter out unwanted features.
         img_name (str): Name of the input image (without extension).
         style_folder (str): Path to the folder containing style images.
-        device (str): Device for generating images (default: "cuda").
     """
+    device="cuda"
     face_image = load_image(f"./source/{img_name}.jpg")
     style_images = [load_image(f"./{style_folder}/tini{i}.png") for i in range(9)]
 
